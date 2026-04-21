@@ -24,6 +24,7 @@ jobs:
       run: terraform init
 
     - name: Terraform Apply
+      working-directory: Eks-terraform
       run: terraform apply -auto-approve
 
   deploy:
